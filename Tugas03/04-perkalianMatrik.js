@@ -11,18 +11,24 @@ function hitungMatriks(matriksA, matriksB) {
   let resultMatriks = []
 
   for (let i = 0; i < matriksA[0].length; i++) {
+
+    let newMatriks = []
     for (let j = 0; j < matriksB[i].length; j++) {
-    //   let temp = 0
-    //   for (let x = 0; x < matriksB[j].length; x++) {
-        
-        
-    //   }
+
+      let temp = 0
+      for (let x = 0; x < matriksA[0].length; x++) {
+        temp += matriksA[i][x] * matriksB[x][j]
+      } 
+      newMatriks.push(temp)
     }
+    resultMatriks.push(newMatriks)
   }
+
+  return resultMatriks
 }
 
 console.log(hitungMatriks([
-  [3,4],[1,2]
+  [1,2,3],[4,5,6],[7,8,9]
 ],[
-  [7,5],[6,4]
+  [6,5],[4,3],[2,1]
 ]));
