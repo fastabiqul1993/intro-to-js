@@ -1,9 +1,3 @@
-// Buatlah program yang memiliki parameter sebuah matriks(array 2 dimensi) dan memiliki return berupa transpose dari matriks tersebut.
-// Contoh input:
-// 123 456 789
-// Contoh output: 147
-// 258 369
-
 function transposeArr(data) {
   let transponded = []
 
