@@ -12,28 +12,26 @@ function findMean () {
   return sum /= nums.length
 }
 
-console.log(findMean());
-
 //Median
 function findMedian() {
 
   let median = 0
   let numlen = nums.length
-  nums.sort()
+  let sorted = nums.sort(function(a,b) {
+    return a - b
+  })
 
   if(numlen % 2 === 0) //find even 
   {
-    median = (nums[numlen / 2 -1] + nums[numlen / 2]) /2
+    median = (sorted[numlen / 2 -1] + sorted[numlen / 2]) /2
   } 
   else  //find odds
   {
-    median = nums[(numlen -1) /2]
+    median = sorted[(numlen -1) /2]
   }
 
   return median
 }
-
-console.log(findMedian());
 
 //Modus
 function findModus() {
@@ -60,4 +58,7 @@ function findModus() {
   return result
 }
 
-console.log(findModus());
+// console.log(findMean());
+console.log(findMedian());
+// console.log(findModus());
+
