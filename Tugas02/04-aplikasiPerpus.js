@@ -1,5 +1,5 @@
-let shelf = {
-  books: [
+let books = 
+  [
     {
       name: 'Rich Dad Poor Dad',
       author: 'Robert T. Kiyosaki',
@@ -16,9 +16,6 @@ let shelf = {
       status: 'tersedia'
     }
   ]
-}
-
-let books = shelf.books
 
 function findBook(bookTitle) {
   books.find(function(book) {
@@ -34,11 +31,11 @@ function showStatus() {
   console.log('===========');
   
   books.map(function(book) {
-    if(book.status === 'available') {
+    if(book.status === 'tersedia') {
       console.log(`Book name: ${book.name}`);
     }
   })
 }
 
-findBook('Sprint')
+// findBook('Sprint')
 showStatus()
