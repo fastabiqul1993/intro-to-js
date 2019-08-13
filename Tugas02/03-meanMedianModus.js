@@ -1,4 +1,4 @@
-let nums = [1,2,3,4,5,2,1,3,5,8]
+let nums = [1,1,2,2,3,3,4,5]
 
 //Mean
 function findMean () {
@@ -38,7 +38,8 @@ function findModus() {
 
   let numlen = nums.length
   let temporary = 0
-  let result = 0
+  let result = []
+  // let finalResult = (result)
 
   for(let i=0; i<numlen; i++) {
     let counter = 0
@@ -49,13 +50,13 @@ function findModus() {
       }
     }
 
-    if(counter > temporary) {
+    if(counter >= temporary) {
       temporary = counter
-      result = nums[i]
+      result.push(nums[i])
     }
   }
 
-  return result
+  return [...new Set(result)].join(',')
 }
 
 console.log(findMean());
