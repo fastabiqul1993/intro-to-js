@@ -16,4 +16,4 @@ function isPalindrome(words) {
   return arrBolean
 }
 
-console.log(isPalindrome(['katak','k a t a k','katakan']));
+console.log(isPalindrome(['katak','k a t a k','katakan', 'rayar', 'r a y a r']));

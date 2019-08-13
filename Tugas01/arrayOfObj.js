@@ -56,7 +56,7 @@ let newSchool = {
   yearOut: '2023'
 }
 
-addNewSchool(newSchool)
+// addNewSchool(newSchool)
 
 // Edit Existing School
 let grade = 'SMP'
@@ -65,7 +65,7 @@ let data = '2015'
 
 editSchool(grade, parameter, data)
 
-// // Delete School
+// // // Delete School
 let grade = 'SMP'
 
 deleteSchool(grade)

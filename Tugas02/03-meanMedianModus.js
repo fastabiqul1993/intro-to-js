@@ -37,20 +37,20 @@ function findMedian() {
 function findModus() {
 
   let numlen = nums.length
-  let temp = 0
+  let temporary = 0
   let result = 0
 
   for(let i=0; i<numlen; i++) {
-    let count = 0
+    let counter = 0
     for(let j=0; j<numlen; j++) {
 
       if(nums[i] === nums[j]) {
-        count += 1
+        counter += 1
       }
     }
 
-    if(count > temp) {
-      temp = count
+    if(counter > temporary) {
+      temporary = counter
       result = nums[i]
     }
   }
@@ -58,7 +58,7 @@ function findModus() {
   return result
 }
 
-// console.log(findMean());
+console.log(findMean());
 console.log(findMedian());
-// console.log(findModus());
+console.log(findModus());
 
