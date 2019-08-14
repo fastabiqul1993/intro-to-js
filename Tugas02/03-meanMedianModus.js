@@ -1,4 +1,4 @@
-let nums = [1,1,2,2,3,3,4,5]
+let nums = [8,8,2,2,2]
 
 //Mean
 function findMean () {
@@ -36,30 +36,34 @@ function findMedian() {
 //Modus
 function findModus() {
 
-  let numlen = nums.length
-  let temporary = 0
+  let mod = []
+  let count = []
   let result = []
-  // let finalResult = (result)
 
-  for(let i=0; i<numlen; i++) {
-    let counter = 0
-    for(let j=0; j<numlen; j++) {
-
-      if(nums[i] === nums[j]) {
-        counter += 1
-      }
-    }
-
-    if(counter >= temporary) {
-      temporary = counter
-      result.push(nums[i])
+  for (let i = 0; i < nums.length; i++) {
+    
+    let index = mod.indexOf(nums[i])
+    if(index === -1) {
+      mod.push(nums[i])
+      count.push(1)
+    } else  {
+      count[index]++
     }
   }
 
-  return [...new Set(result)].join(',')
+  let maximum = Math.max(...count)
+  
+  for (let i = 0; i < count.length; i++) {
+    
+    if(count[i] === maximum) {
+      result.push(mod[i])
+    }
+  }
+
+  return result
 }
 
-console.log(findMean());
-console.log(findMedian());
+// console.log(findMean());
+// console.log(findMedian());
 console.log(findModus());
 
