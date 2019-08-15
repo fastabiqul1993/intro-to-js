@@ -1,15 +1,14 @@
-let nums = [8,8,2,2,2]
+let nums = [8,8,1,2,2]
 
 //Mean
 function findMean () {
 
-  let sum = 0
-
-  for(let i=0; i<nums.length; i++) {
-    sum += nums[i]
-  }
+  let total = 0
+  let sum = nums.map(function(num) {
+    total += num
+  })
   
-  return sum /= nums.length
+  return total /= nums.length
 }
 
 //Median
@@ -17,6 +16,7 @@ function findMedian() {
 
   let median = 0
   let numlen = nums.length
+  
   let sorted = nums.sort(function(a,b) {
     return a - b
   })
@@ -63,7 +63,7 @@ function findModus() {
   return result
 }
 
-// console.log(findMean());
-// console.log(findMedian());
+console.log(findMean());
+console.log(findMedian());
 console.log(findModus());
 
