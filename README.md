@@ -1,14 +1,17 @@
 # Intro to Javascript
-------------
+---------------------------------------
 First step to code with Javascript, because ***A journey of a thousand miles begins with a single step.***
 
 by ***Lao Tzu***
 
+
 ### Before run
-------------
+---------------------------------------
 Make sure [Node.js](https://nodejs.org/en/) already installed in your computer.
+
+
 ### How to run
-------------
+---------------------------------------
 Insert each of the folder for running the task.
 
 ```
