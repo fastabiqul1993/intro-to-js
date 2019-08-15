@@ -5,6 +5,7 @@ First step to code with Javascript, because ***A journey of a thousand miles beg
 by ***Lao Tzu***
 
 ### Before run
+------------
 Make sure [Node.js](https://nodejs.org/en/) already installed in your computer.
 ### How to run
 ------------
