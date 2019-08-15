@@ -5,12 +5,12 @@ First step to code with Javascript, because ***A journey of a thousand miles beg
 by ***Lao Tzu***
 
 
-### Before run
+### 01. Before run
 ---------------------------------------
 Make sure [Node.js](https://nodejs.org/en/) already installed in your computer.
 
 
-### How to run
+### 02. How to run
 ---------------------------------------
 Insert each of the folder for running the task.
 
