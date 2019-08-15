@@ -60,7 +60,7 @@ function findModus() {
     }
   }
 
-  return result
+  return result.join(',')
 }
 
 console.log(findMean());
